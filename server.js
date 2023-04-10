@@ -25,11 +25,11 @@ app.get('/', (req, res) => {
 
 });
 app.get('/hello', (req, res) => {
-  res.send('<h1 style="color:green;">hello world</h1> <br\>');
+  res.send('<h1 style="color:red;">hello world</h1> <br\>');
 
 });
 app.get('/employees',(req,res)=>{
-  res.send(EMPLOYEES);
+  res.send(JSON.stringify(EMPLOYEES));
 });
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);

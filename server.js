@@ -28,7 +28,7 @@ app.get('/hello', (req, res) => {
   res.send('<h1 style="color:green;">hello world</h1> <br\>');
 
 });
-app.get('',(req,res)=>{
+app.get('/employees',(req,res)=>{
   res.send(EMPLOYEES);
 });
 app.listen(PORT, HOST);

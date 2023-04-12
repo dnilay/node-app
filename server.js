@@ -21,7 +21,7 @@ const EMPLOYEES=[
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('<h1 style="color:green;">Node App - version-3!!</h1> <br\>');
+  res.send('<h1 style="color:red;">Node App - version-4!!</h1> <br\>');
 
 });
 app.get('/hello', (req, res) => {
